@@ -1,5 +1,6 @@
 from typing import Optional
 import weakref
+from Sample import Sample
 class Hyperparameter:
     """
     A hyperparamater value and overall quality of the classification
@@ -24,4 +25,3 @@ class Hyperparameter:
                 fail_count += 1
         self.quality = pass_count / (pass_count + fail_count)
 
-        
